@@ -41,12 +41,12 @@ $green: #28a745;
 $teal: #20c997;
 $cyan: #17a2b8 t;
 
-$primary: rgb(255, 166, 0);
+$primary: rgb(0, 204, 255);
 $secondary: $gray-600;
 $success: $green;
-$info: red;
+$info: rgb(88, 133, 255);
 $warning: $yellow;
-$danger: rgb(255, 94, 0);
+$danger: rgb(255, 51, 0);
 $light: $gray-100;
 $dark: $gray-800;
 
@@ -64,8 +64,15 @@ $body-color: rgb(190, 190, 190);
 
 $border-width: 0;
 $border-radius: .1rem;
-$border-radius-lg: 2.3rem !default;
-$border-radius-sm: 2.2rem !default;
+$border-radius-lg: 2.3rem;
+$border-radius-sm: 2.2rem;
+
+li {
+    &:hover {
+        background-color: $white;
+    }
+}
+
 // Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
